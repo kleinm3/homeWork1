@@ -109,6 +109,14 @@ nav a:hover {
 	margin-left: 10%;
 	border-radius: 10px;
 	margin-bottom: 1em;
+	display: inline-block;
+}
+
+
+.homepagepizza,
+.whatshot {
+	display: inline-block;
+	vertical-align: top;
 }
 
 /*pizza on the first page*/
