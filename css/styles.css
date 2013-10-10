@@ -1,24 +1,62 @@
 @import url(http://fonts.googleapis.com/css?family=Slackey);
+@import url(http://fonts.googleapis.com/css?family=Andika);
 @import url(reset.css);
 
 body {
-	background-image: url(../img/brickwall.png);
+	background-image: url(../img/debut_dark.png);
 	background-repeat: repeat;
 	font-family: 'Open Sans', sans-serif;
 	font-size: 13px;
 	margin: 10px; 
 }
 
-.main-pagebox {
+/*Box that goes all the way down*/
+.box {
 	width: 80%;
-	background-color: #FFF;
-	margin: 0 auto; /*Horizontal centering*/
-	box-shadow: 1px 1px 3px;
+	border-style: solid;
+	border-width: 2px;
+	border-color: black;
+	margin: 0 auto;
+	background-image: url(../img/ricepaper.png);
 }
 
-.right {
-	float: right;
+/*box for the top part of the page*/
+.main-pagebox {
+	background-color: #DCDCE6;
+	margin: 0 auto; /*Horizontal centering*/
+	box-shadow: 1px 1px 3px;
+	margin-bottom: 1em;
 }
+
+/*sections of the top box*/
+.left,
+.nav,
+.right {
+	width: 32%;
+	display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: .2em;
+}	
+
+.right {
+	text-align: right;
+	font-family: "Andika", sans-serif;
+}
+
+.right link,
+.right visited {
+	text-decoration: none;
+}
+
+
+.left {
+	font-family: "Andika", sans-serif;
+}
+
+.nav {
+	text-align: center;
+}
+
 
 h1 {
 	font-family: 'Slackey', sans-serif;
@@ -29,41 +67,28 @@ h1 {
 
 .logo {
 	width: 100px;
-	height: 100px;
+	height: 90px;
+	border-radius: 10px;
 }
 
-.hotstuff {
-	width: 30%;
-	height: 65%;
-	margin: 0 auto;
-	background-color: black;
-	box-shadow: 1px 1px 3px;
-	position: absolute;
-	top: 40%%; /*225px*/
-	left: 35%; /*407px*/
-	font-family: sans-serif;
-	color: red;
-	font-weight: bold;
-	font-size: 22px;
-	
-}
-
-
+/*Different navigation tools*/
 nav ul {
+	width: 80%;
+	margin: 0 auto;
 	box-shadow: 1px 1px 1px; 
 	border-radius: 5px;
-	background-color: #38E156;
+	background-image: url(../img/debut_dark.png);
 	padding: 5px;
 }
 
 nav li {
 	display: inline-block;
-
 }
 
 nav a {
 	display: inline-block;
-	font-weight: bold; 
+	font-weight: bold;
+	font-size: 14px; 
 	padding: 10px;
 	color: #FFF;
 }
@@ -73,38 +98,103 @@ nav a:visited {
 	text-decoration: none;
 }
 
+/*hover black over navigation*/
 nav a:hover {
-	color: #FF9D45;
+	color: #000;
 }
 
+.layout {
+	background-image: url(../img/debut_dark.png);
+	width: 80%;
+	margin-left: 10%;
+	border-radius: 10px;
+	margin-bottom: 1em;
+}
+
+/*pizza on the first page*/
 .homepagepizza {
-	height: 400px;
-	width: 400px;
-	float: left;
+	width: 60%;
+	margin-left: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-right: 2%;
+	height: 300px;
+	border-radius: 10px;
 }
 
-.yummypizza {
-	height: 400px;
-	width: 400px;
-	float: right;
-}
-
-.twitter {
-	font-family: sans-serif;
-	font-size: 18px; 
+/*whats hot section*/
+.whatshot {
+	background-color: #DCDCE6;
+	margin-left: 2%;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-right: 2%;
+	width: 30%;
+	border-radius: 10px;
+	height: 300px;
 	text-align: center;
+
+}
+
+.hotstuff {
+	font-family: 'Slackey', sans-serif;
+	font-size: 24px;
+	margin-bottom: .5em;
+}
+
+.happyhour {
+	font-family: 'Andika', sans-serif;
+	font-size: 18px;
+	margin-bottom: .3em;
+}
+
+.drinksand {
+	margin-bottom: 1.5em;
+}
+
+.breadsticks {
+	width: 80%;
+	margin: 5%;
+	margin-bottom: 5%;
+	border-radius: 10px;
+}
+
+.homepagepizza,
+.whatshot {
+	display: inline-block;
+	vertical-align: bottom;
+}
+
+
+.slogan {
+	font-family: 'Andika', sans-serif;
+	font-size: 18px;
 	position: absolute;
-	top: 400px;
-	left: 450px;
+	text-align: center;
+	top: 65%;
+	left: 25%;
+	width: 30%;
+	color: #FFF;
 }
 
 /*Menu*/
 
 .menu {
-	font-family: sans-serif;
+	font-family: 'Andika', sans-serif;
 	font-size: 36px;
 	text-align: center;
+	margin-bottom: .5em;
 }
+
+.inline {
+	background-image: url(../img/debut_dark.png);
+	width: 80%;
+	height: 370px;
+	margin-left: 10%;
+	border-radius: 10px;
+	margin-bottom: .5em;
+}
+
 
 .types {
 	font-family: sans-serif;
@@ -112,32 +202,114 @@ nav a:hover {
 	text-align: center;
 }
 
+/*Different pizza sizes text*/
+.pizzasizes {
+	width: 100%;
+	text-align: center;
+}
+
+.sizes {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+/*Customizing your own pizza*/
+.customized {
+	font-weight: bold;
+	font-style: italic;
+	text-align: center;
+}
+
 .pizza {
-	margin-right: 20px;
-	float: left;
-	/*position: fixed;
-	top: 300px;
-	left: 0px;*/
-	width: 400px;
-	height: 400px; 
+	height: 300px;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 5%;
+	margin-right: 5%;
+	margin-bottom: 5%;
+	border-radius: 10px;
 }
 
 .item {
-	font-family: 'Slackey', sans-serif;
-	font-size: 48px;
+	font-family: 'Andika', sans-serif;
+	font-weight: bold;
+	font-style: italic;
+	font-size: 24px;
+	text-align: left;
+	margin-bottom: .3em;
+	text-decoration: underline;
 }
 
 .meat {
-	font-size: 18px;
+	text-indent: 5%;
+	font-size: 14px;
 	font-weight: bold;
-	text-decoration: underline;
+	text-align: left;
+}
+
+.meatpies,
+.vegetarianpies,
+.drinks,
+.dessert {
+	width: 40%;
+}
+
+.meatpies, 
+.vegetarianpies {
+	display: inline-block;
+}
+
+.vegetarianpies {
+	float: right;
+	clear: both;
+}
+
+.drinks,
+.dessert {
+	display: inline-block;
+}
+
+.dessert {
+	float: right;
+}
+
+dd {
+	margin-bottom: 1em;
+	padding-left: 10%;
 }
 
 /*About Dawg Pizza*/
 
 .about {
-	font-family: 'Slackey', sans-serif;
-	font-size: 48px;
+	font-family: 'Andika', sans-serif;
+	font-size: 30px;
 	text-align: left;
+	width: 80%;
+	margin-bottom: 1em;
 }
 
+.aboutheading {
+	font-family: sans-serif;
+	font-size: 22px;
+	text-decoration: underline;
+	font-weight: bold;
+	margin-bottom: .5em;
+}
+
+.twitter {
+	display: inline-block;
+}
+
+.icon {
+	width: 4%;
+}
+
+.footer {
+	margin-top: 1em;
+	width: 80%;
+	font-size: 14px;
+}
+
+.aboutparagraph {
+	margin-bottom: 1em;
+}

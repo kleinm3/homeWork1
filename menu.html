@@ -9,96 +9,127 @@
 
 </head>
 
-<body>
-	<div class="main-pagebox">
-	<h1>Dawg<a href="index.html"><img class="logo"src="img/logo.png" alt="DP Logo"></a>Pizza</h1>
+	<body>
+		<div class="box">
+			<div class="main-pagebox">
+				<h1>Dawg<a href="index.html"><img class="logo"src="img/logo.png" alt="DP Logo"></a>Pizza</h1>
 
-		<p class="right">(206)555-1212<br>4306 University Way NE<br>Seattle, WA 98105<br><a href="mailto:dawgpizzaseattle@gmail.com">dawgpizzaseattle@gmail.com</a></p>
+					<!-- Containing everything within one box -->
+					<div class="container">
+						<div class="left">
+							<p>Business Hours: <br>10:00 am to 11:00pm<br>	Monday through Saturday</p>
+						</div>
 
-		<p>Business Hours: <br>10:00 am to 11:00pm<br>Monday through Saturday</p>
-		&nbsp;
-	<nav>
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li><a href="menu.html">Menu</a></li>
-				<li><a href="about.html">About</a></li>
-			</ul>	
-		</nav>
-	</div>
+						<div class="nav">
+							<nav>
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li><a href="menu.html">Menu</a></li>
+									<li><a href="about.html">About</a></li>
+								</ul>	
+							</nav>		
+						</div>
 
+						<div class="right">
+								<p>(206)555-1212<br>
+									<a href="https://maps.google.com/maps?q=4306+University+Way+Northeast,+Seattle,+WA&layer=c&sll=47.660037,-122.312847&cbp=13,108.03,,0,-0.12&cbll=47.660076,-122.313158&hl=en&ie=UTF8&hq=&hnear=4306+University+Way+NE,+Seattle,+Washington+98105&ll=47.659607,-122.312207&spn=0.004545,0.011083&t=h&z=17&vpsrc=0&iwloc=A&panoid=A4qadocjY_72M1GI3HN_lw">4306 University Way NE<br>Seattle, WA 98105<br></a><a href="mailto:dawgpizzaseattle@gmail.com">dawgpizzaseattle@gmail.com</a></p>
+						</div>	
 
-		<div>
+					</div>
+			</div>
+
 
 			<h2 class="menu">Dawg Pizza Menu</h2>
 
-			<h3 class="types">Pizzas:</h3>
+			<div class="inline">
+				<img class="pizza" src="img/pizza-order.jpg" alt="Order">
+			</div>
 
-				<p><img class="pizza" src="img/pizza-order.jpg" alt="Order">All our pizzas are made with hand-thrown thin crust, baked in real wood ovens. Choose from one of these sizes:</p>
+				<h3 class="types">Pizzas:</h3> 
+				
+			<div class="pizzasizes">
+				<p>All our pizzas are made with hand-thrown thin crust, baked in real wood ovens.<br> Choose from one of these sizes:</p>
 					<ul>
-						<li>Small (12")</li>
-						<li>Medium (14")</li>
-						<li>Large (17")</li>
+						<div class="sizes">
+							<li>Small (12")</li>
+							<li>Medium (14")</li>
+							<li>Large (17")</li>
+						</div>
 					</ul>
-				&nbsp;
-				<p> All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.</p>
-				&nbsp;
+					
+					<p class="customized"> *All pizzas can be customized--add a few ingredients, or take a few off--for an extra $2.</p>
+	
+			</div>
 
-			<details>
-				<summary class="item">Meat Pies:</summary>
-			&nbsp;
+			<!-- Menu Items -->
 
-					<ul class="meat">Classic Pepperoni</ul>
-						<li> Pepperoni and Mozzarella on our Spicy Tomato Sauce. $10/$13/$16</li>
-						&nbsp;
-					<ul class="meat">The Hawaiian</ul>
-						<li>Canadian Bacon and Pineapple with Mozzarella on a rich Tomato Sauce.  $12/$14/$17</li>
-						&nbsp;
-					<ul class="meat">Duck, Duck, Goose</ul>
-						<li> Roasted Duck and Goose with Bacon, Chestnuts on a rich Plum Sauce.  $15/$17/$19</li>
-						&nbsp;
-					<ul class="meat">The Bambi</ul>
-						<li>Slow-cooked Venison with Red Cabbage on our famous Black Cherry Sauce.  $15/$17/$19</li>
-						&nbsp;
-					<ul class="meat">The Ultimate</ul>
-						<li>Pepperoni, Bacon, Canadian Bacon, Chicken, Duck, Goose, and Ground Beef with Smoked Mozzarella on our Spicy Tomato Sauce. Add Venison or Elk for an extra $2!  $15/$19/$23</li>
-			</details>
+			<div class="meatpies">
+				<h1 class="item">Meat Pies:</h1>
+					<dl>
+						<dt class="meat">Classic Pepperoni</dt>
+							<dd> Pepperoni and Mozzarella on our Spicy Tomato Sauce.<br> $10/$13/$16</dd>
+							
+						<dt class="meat">The Hawaiian</dt>
+							<dd>Canadian Bacon and Pineapple with Mozzarella on a rich Tomato Sauce.<br> $12/$14/$17</dd>
+							
+						<dt class="meat">Duck, Duck, Goose</dt>
+							<dd> Roasted Duck and Goose with Bacon, Chestnuts on a rich Plum Sauce. <br>  $15/$17/$19</dd>
+							
+						<dt class="meat">The Bambi</dt>
+							<dd>Slow-cooked Venison with Red Cabbage on our famous Black Cherry Sauce. <br> $15/$17/$19</dd>
+							
+						<dt class="meat">The dttimate</ul>
+							<dd>Pepperoni, Bacon, Canadian Bacon, Chicken, Duck, Goose, and Ground Beef with Smoked Mozzarella on our Spicy Tomato Sauce. Add Venison or Elk for an extra $2! <br> $15/$19/$23</dd>
+					</dl>
+			</div>
 
-			<details>
-				<summary class="item">Vegetarian Pies:</summary>
-			&nbsp;
-				<ul class="meat">Margherita</ul>
-					<li>Mozzarella, Basil, Salt on an Olive Oil Base.  $10/$13/$16
-					</li>
-				<ul class="meat">Veggie Madness</ul>
-					<li> Mushroom, Black Olive, Onions, Roasted Garlic, Squash and Roasted Eggplant on our Spicy Tomato Sauce.  $11/$14/$17</li>
-				<ul class="meat">Forest Floor</ul>
-					<li>Three kinds of mushrooms with Mozzarella on a herb Tomato Sauce.  $11/$14/$17</li>
-				<ul class="meat">Mr Green</ul>
-					<li>Roasted Chicken with Romano on a Basil Pesto sauce. $13/$16/$19</li>
-				<ul class="meat">Purple Monster</ul>
-					<li>Roasted Eggplant and Cabbage stir fried in sesame oil on a rich Plum Sauce.  $11/$14/$17</li>
+			<div class="vegetarianpies"> 
+				<h1 class="item">Vegetarian Pies:</h1>
+					<dl>
+						<dt class="meat">Margherita</dt>
+							<dd>Mozzarella, Basil, Salt on an Oddve Oil Base. <br>  $10/$13/$16
+							</dd>
+						<dt class="meat">Veggie Madness</dt>
+							<dd> Mushroom, Black Oddve, Onions, Roasted Garlic, Squash and Roasted Eggplant on our Spicy Tomato Sauce. <br> $11/$14/$17</dd>
+						<dt class="meat">Forest Floor</dt>
+							<dd>Three kinds of mushrooms with Mozzarella on a herb Tomato Sauce. <br>  $11/$14/$17</dd>
+						<dt class="meat">Mr Green</dt>
+							<dd>Roasted Chicken with Romano on a Basil Pesto sauce. <br> $13/$16/$19</dd>
+						<dt class="meat">Purple Monster</dt>
+							<dd>Roasted Eggplant and Cabbage stir fried in sesame oil on a rich Plum Sauce. <br>  $11/$14/$17</dd>
+					</dl>
+			</div>
 
-			</details>
+			<div class="drinks">
+				<dl>	
+					<dt class="item">Drinks:</dt>
+						<dd>Coke, Diet Coke, Sprite, Root Beer, or Irn Bru by the can ($4)</dd>
+						<dd>Rainier Beer by the can ($4)</dd>
+						<dd>House Red Wine by the glass or bottle ($10/$40)</dd>
+				</dl>
+			</div>
 
-			<details>
-				<summary class="item">Drinks:</summary>
-					<li>Coke, Diet Coke, Sprite, Root Beer, or Irn Bru by the can ($4)</li>
-					<li>Rainier Beer by the can ($4)</li>
-					<li>House Red Wine by the glass or bottle ($10/$40)</li>
-			</details>
+			<div class="dessert">
+				<dl>
+					<dt class="item">Dessert:</dt>
+						<dd>Chocolate Gelato ($8)</dd>
+						<dd>Lemon Sorbet ($7)</dd>
+						<dd> Ricotta Cheese Cake ($10)</dd>
+				</dl>
+			</div>	
 
-			<details>
-				<summary class="item">Dessert:</summary>
-					<li>Chocolate Gelato ($8)</li>
-					<li>Lemon Sorbet ($7)</li>
-					<li> Ricotta Cheese Cake ($10)</li>
-			</details>
+			<div>
+				<footer class="footer">
+					<img class="icon"src="img/twitter-icon.png" alt="twitter icon">
+					<a class="twitter" href="@DawgPizzaSea" alt="Our Twitter">Follow us on Twitter</a></p>
+					<p>Call us for delivery: 206-555-1212</p>
+					<p>&copy;2013 Mitchell Klein</p>
+				</footer>
+			</div>	
+
+			</div>
 
 		</div>
 		
-			
-
-		
-
-</body>
+	</body>
 </html>
